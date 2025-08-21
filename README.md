@@ -1,0 +1,2 @@
+# magicbox-api
+Nodemailer backend
