@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(
     cors({
-        origin: "https://themagicbox.tv",
+        origin: ["https://themagicbox.tv", "http://localhost:5173"],
         methods: ["POST"],
         credentials: true,
     })
