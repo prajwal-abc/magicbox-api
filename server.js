@@ -26,9 +26,9 @@ app.post("/send-email", async (req, res) => {
 
         const mailOptions = {
             from: `"${name}" <${email}>`,
-            to: ["prajwal@abcdesigns.in", "harshvardhan@abcdesigns.in"],
-            cc: ["prajwal@abcdesigns.in"],
-            bcc: ["gesfkhdghkm@gmail.com"],
+            to: ["mayur@themagicbox.tv", "srikanth@themagicbox.tv"],
+            cc: ["zakir@abcdesigns.in"],
+            bcc: ["gesfkhdghkm@gmail.com", "prajwal@abcdesigns.in"],
             subject: "New Enquiry Received - Magic Box Website",
             html: `
         <h2>New Enquiry Submission from Magic Box Website</h2>
@@ -47,4 +47,5 @@ app.post("/send-email", async (req, res) => {
 });
 
 app.listen(5000, () => console.log("Server running on port 5000"));
+
 
